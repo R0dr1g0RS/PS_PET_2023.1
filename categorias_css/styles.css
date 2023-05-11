@@ -1,0 +1,263 @@
+/* Font importing */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+body{
+    padding-top: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Barra de Navegação */
+.menu {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background: #493657;
+}
+
+.menu .logo a {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.logo a {
+    text-decoration: none;
+}
+
+.menu .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu .logo h1 {
+    color: white;
+}
+
+
+/* Categorias */
+.categories{
+    height: auto;
+}
+
+.container-categories {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #b4b8ab;
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-categories a{
+    text-transform: uppercase;
+    color: #493657;
+    font-size: 18px;
+}
+
+.container-categories p{
+    font-size: 18px;
+    color: #493657;
+}
+
+
+/* Título */
+.category{
+    margin-top: 60px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #a30015;
+}
+
+.title{
+    text-transform: uppercase;
+    color: #a30015;
+}
+
+
+/* FILTROS */
+.filter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+  
+.search-filter {
+    max-width: 50%;
+    min-width: 10vw;
+    margin: auto auto;
+    background-color: #b4b8ab;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.search-filter input{
+    border: none;
+    outline: none;
+    font-size: medium;
+    color: #493657;
+    background: transparent;
+    padding: 5px;
+    width: 40vw;
+}
+
+.search-icon{
+    width: 25px;
+    height: 25px;
+    fill: #493657;
+}
+  
+.search-filter button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+  
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto;
+    width: 10vw;
+    padding: 1vw;
+}
+
+.filter-container button{
+    padding: 10px;
+    margin-left: 2vw;
+    font-size: medium;
+    font-weight: bold;
+    color: #b4b8ab;
+    background: transparent;
+    border: 2px solid #b4b8ab;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* CATÁLOGO DE PRODUTOS */
+section.catalog-product{
+    margin: 60px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 80px;
+    place-items: center;
+    max-width: 100%;
+}
+
+.card-content {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: #b4b8ab;
+    text-align: center;
+    color: #f4f9e9;
+    border-radius: 6px;
+}
+
+.card-content img {
+    max-width: 100%;
+    color: #f4f9e9;
+    cursor: pointer;
+}
+
+.card-content img:hover{
+    transition: 6ms ease-in-out;
+    max-width: 90%;
+}
+
+.card-content h2 {
+    margin-top: 10px;
+    color: #f4f9e9;
+}
+
+.card-content p.price {
+    font-weight: bold;
+    color: #a30015;
+    font-size: 30px;
+}
+
+.card-content-take {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-content-buy-now {
+    flex: 1;
+    text-align: left;
+}
+
+.card-content-buy-now button{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    height: auto;
+    color: #f4f9e9;
+    background-color: #a30015;
+    border: 2px solid #a30015;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card-content-buy-now button:hover{
+    transition: color 6ms ease-in-out;
+    transition: background-color 6ms ease-in-out;
+    background: transparent;
+    border: 2px solid #a30015;
+    color: #a30015;
+}
+
+.cart-icon{
+    width: 25px;
+    height: 25px;
+    fill: #f4f9e9;
+    cursor: pointer;
+}
+
+.card-content-cart {
+    text-align: right;
+}
+
+.card-content-cart button{
+    width: auto;
+    height: auto;
+    background-color: #a30015;
+    border: 1px solid #a30015;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.cart-icon:hover{
+    transition: color 6ms ease-in-out;
+    transition: background-color 6ms ease-in-out;
+    width: 20px;
+    height: 20px;
+}
