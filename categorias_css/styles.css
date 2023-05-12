@@ -1,8 +1,5 @@
-/* Font importing */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
 
@@ -18,38 +15,111 @@ body{
 
 
 /* Barra de Navegação */
-.menu {
+.nav-bar {
     position: fixed;
     top: 0;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 100px;
-    width: 100%;
-    background: #493657;
+    background-color: #493657;
+    z-index: 9999;
 }
 
-.menu .logo a {
+.nav-bar .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-bar .logo a {
     display: flex;
-    gap: 10px;
-    margin-left: 30px;
-    justify-content: left;
+    gap: 30px;
     align-items: center;
 }
 
+.nav-bar .logo h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contents ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: red;
+}
 
 .logo a {
     text-decoration: none;
 }
 
-.menu .logo img {
-    width: 50px;
-    height: 50px;
+.nav-bar-button-container{
+    display: none;
+    width: 25px;
+    height: 25px;
+    fill: red;
 }
 
-.menu .logo h1 {
-    color: white;
+.nav-bar-button-container:hover{
+    cursor: pointer;
 }
 
+#nav-bar-toggle {
+    display: none;   
+}
+
+.cart-icon-nav-bar{
+    width: 25px;
+    height: 25px;
+    fill: red;
+    cursor: pointer;
+}
+
+input:checked ~ .contents{
+    display:flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar .logo a h1 {
+        display: none;
+    }
+
+    .nav-bar-button-container{
+        display: block;
+    }
+  
+    .contents {
+        display: none;
+    }
+  
+    .contents ul {
+        flex-direction: column;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+  
 
 /* Categorias */
 .categories{
@@ -74,6 +144,15 @@ body{
 .container-categories p{
     font-size: 18px;
     color: #493657;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-categories p{
+        font-size: 14px;
+    }   
+    .container-categories a{
+        font-size: 14px;
+    }
 }
 
 
@@ -157,6 +236,12 @@ body{
     border: 2px solid #b4b8ab;
     border-radius: 20px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .filter-container button{
+        font-size: small;
+    }
 }
 
 
@@ -260,4 +345,39 @@ section.catalog-product{
     transition: background-color 6ms ease-in-out;
     width: 20px;
     height: 20px;
+}
+
+
+/* Rodapé */
+.rodape{
+    background: #493657;
+    color:white;
+}
+
+.rodape .logo-rodape{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:2rem;
+}
+
+.rodape .rodape-last{
+    display:flex;
+    justify-content: space-around;
+}
+
+.rodape .logo-rodape img{
+    width:200px;
+    height:200px;
+    padding:2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .rodape .logo-rodape img{
+        width:100px;
+        height:100px;
+        padding:1rem;
+    }   
 }

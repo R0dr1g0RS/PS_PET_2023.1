@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camisas | PETshop</title>
     <link rel="stylesheet" href="categorias_css/styles.css">
+    <script src="https://kit.fontawesome.com/7a76c9b11e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="nav-bar">
-            <nav class="menu">
-                <div class="logo">
-                    <a href="#">
-                        <img src="PET_LOGOS/logo_pet_sem_nome.png" alt="PET LOGO">
-                        <h1>
-                            <span style="color: red;">PET</span>
-                            shop
-                        </h1>
-                    </a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="/">
+                    <img src="PET_LOGOS/logo_pet_sem_nome.png" alt="logo">
+                    <h1><span style="color: red;">PET</span>shop</h1>
+                </a>
+            </div>
+            <div>
+                <label class="nav-bar-button-container" for="nav-bar-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="nav-bar-toggle">
+                <div class="contents">
+                    <ul>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Equipe</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <i>
+                        <svg class="cart-icon-nav-bar" id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <path d="M217.06543,146.8623l13.09082-72.00048A16.00086,16.00086,0,0,0,214.41406,56H46.67676L41.793,29.13818A15.9918,15.9918,0,0,0,26.05078,16H8A8,8,0,0,0,8,32H26.05078L52.75293,178.86182a16.0028,16.0028,0,0,0,1.187,3.76489A27.99341,27.99341,0,1,0,97.293,192H166.707A27.99678,27.99678,0,1,0,192,176H68.49512l-2.90918-16h135.7373A15.99184,15.99184,0,0,0,217.06543,146.8623ZM84,204a12,12,0,1,1-12-12A12.01343,12.01343,0,0,1,84,204Zm120,0a12,12,0,1,1-12-12A12.01343,12.01343,0,0,1,204,204ZM49.58594,72H214.41406l-13.09082,72H62.67676Z"/>
+                          </svg>
+                    </i>
+                </a>
+            </div>
+        </nav>        
     </header>
     <div class="categories">
         <div class="container-categories">
@@ -90,8 +109,8 @@
             </button>
         </div>
         <div class="filter-container">
-            <button>Filtros</button>
-            <button>Ordenar</button>
+            <button>Filtros▼</button>
+            <button>Ordenar▼</button>
         </div>
     </div>
     <section class="catalog-product">
@@ -236,6 +255,14 @@
             </div>
         </div>
     </section>
-    
+    <footer class="rodape">
+        <div class="logo-rodape">
+            <img src="PET_LOGOS/logo_pet_sem_nome.png">
+            <h1><span class="red">PET</span>shop</h1>
+        </div>
+        <div class="rodape-last">
+            <p>© 2023 PETshop, Todos os direitos reservados.</p>
+        </div>
+    </footer>    
 </body>
 </html>
