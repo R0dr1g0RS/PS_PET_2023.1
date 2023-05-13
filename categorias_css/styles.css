@@ -61,7 +61,7 @@ li a {
 }
 
 li a:hover {
-    color: red;
+    color: #a30015;
 }
 
 .logo a {
@@ -72,7 +72,7 @@ li a:hover {
     display: none;
     width: 25px;
     height: 25px;
-    fill: red;
+    fill: #a30015;
 }
 
 .nav-bar-button-container:hover{
@@ -86,7 +86,7 @@ li a:hover {
 .cart-icon-nav-bar{
     width: 25px;
     height: 25px;
-    fill: red;
+    fill: #a30015;
     cursor: pointer;
 }
 
@@ -146,12 +146,12 @@ input:checked ~ .contents{
     color: #493657;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
     .container-categories p{
         font-size: 14px;
     }   
     .container-categories a{
-        font-size: 14px;
+        font-size: 10px;
     }
 }
 
@@ -183,7 +183,6 @@ input:checked ~ .contents{
   
 .search-filter {
     max-width: 50%;
-    min-width: 10vw;
     margin: auto auto;
     background-color: #b4b8ab;
     border-radius: 20px;
@@ -257,7 +256,10 @@ section.catalog-product{
 }
 
 .card-content {
+    display: grid;
+    grid-template-columns: 1fr;
     width: 300px;
+    height: 600px;
     margin: 20px;
     padding: 20px;
     background: #b4b8ab;
@@ -274,7 +276,12 @@ section.catalog-product{
 
 .card-content img:hover{
     transition: 6ms ease-in-out;
-    max-width: 90%;
+    opacity: 50%;
+}
+
+.card-content-description{
+    align-self: end;
+    cursor: pointer;
 }
 
 .card-content h2 {
@@ -320,7 +327,7 @@ section.catalog-product{
     color: #a30015;
 }
 
-.cart-icon{
+.card-content-cart .cart-icon{
     width: 25px;
     height: 25px;
     fill: #f4f9e9;
@@ -335,16 +342,43 @@ section.catalog-product{
     width: auto;
     height: auto;
     background-color: #a30015;
-    border: 1px solid #a30015;
+    border: 2px solid #a30015;
     padding: 6px;
     border-radius: 10px;
 }
 
-.cart-icon:hover{
+.card-content-cart button:hover{
     transition: color 6ms ease-in-out;
     transition: background-color 6ms ease-in-out;
-    width: 20px;
-    height: 20px;
+    background-color: transparent;
+
+    .cart-icon{
+        fill: #a30015;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section.catalog-product{
+        margin: 30px;
+        padding: 25px;
+    }
+
+    .card-content{
+        width: auto;
+        height: auto;
+        font-size: medium;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .card-content-buy-now button{
+        font-size: medium;
+    }
+
+    .card-content-cart .cart-icon{
+        width: 25px;
+        height: 25px;
+    }
 }
 
 
