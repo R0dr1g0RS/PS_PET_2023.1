@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Início do cabeçalho-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/7a76c9b11e.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <!--importando css-->
+    <link rel="stylesheet" href="styles_checkout.css">
+    <!--ícone no navegador-->
+    <link rel="icon" href="/PET_LOGOS/logo_pet_sem_nome.png">
+    <title>PETshop - Check Out</title>
+</head>
+<body>
+    <!--menu-->
+    <nav class="menu">
+        <div class="logo">
+            <a href="/">
+                <img src="/PET_LOGOS/logo_pet_sem_nome.png" alt="pet logo">
+                <h1><span class="red">PET</span>shop</h1>
+            </a>
+            
+        </div>
+        <div>       
+            
+            <label class='menu-button-container' for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="menu-toggle">
+
+            <div class="contents">
+                <ul>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Equipe</a></li>
+                </ul>
+            </div>       
+        </div>
+        
+        </div>
+        <div class="carrinho">
+            <a href="/carrinho"><i class="fa-solid fa-cart-shopping" style="color:red; font-size:1.3rem;"></i></a>
+        </div>
+
+    </nav>
+    <!--Fim do cabeçalho-->
+    <!--Formulário de finalização de compra-->
+  <div class="total-finalizacao">
+      <div class="total-cart">
+        <div class="produtos">
+          <div class="produto1">
+            <img src="/images/camisa-loading.png" alt="Camisa - Loading...">
+              <div class="info-camisa">
+                <h4 style="margin-right: auto;">Camisa - Loading...</h4>
+                  <p>R$49,99</p>
+              </div>
+              <div class="qtd-1">
+                <label>Quantidade:</label>
+                <input type="number" value="1" min="1" >
+              </div>
+          </div>
+
+          <hr style="background-color: black;">
+
+          <div class="produto2">
+            <img src="/images/xicara-code.png" alt="Caneca - Code">
+                <div class="info-caneca">
+                  <h4 style="margin-right: auto;">Caneca - Code</h4>
+                    <p>R$39,99</p>
+                </div>
+                <div class="qtd-2">
+                  <label>Quantidade:</label>
+                  <input type="number" value="1" min="1">
+                </div>
+          </div>
+        </div>
+        
+          <hr style="height: 3px; background-color: black;">
+
+        <div class="valor-subtotal">
+          <div class="titulo">
+            <h4 style="margin-right: auto;">Subtotal:</h4>
+            <h4>R$89,98</h4>
+          </div>
+
+          <div class="item-1">
+            <p style="margin-right: auto;">Camisa - Loading... -- 1 unidade</p>
+            <p>R$49,99</p>
+          </div>
+        
+
+          <div class="item-2">
+            <p style="margin-right: auto;">Caneca - Code -- 1 unidade</p>
+            <p>R$39,99</p>
+          </div>
+
+          <div class="frete">
+            <p style="margin-right: auto;">Frete</p>
+            <p style="color:darkgreen;">Grátis</p>
+          </div>
+        </div>
+
+          <button type="submit">Finalizar compra</button>
+        </form>
+          </div>
+    <div class="total-form">
+      <form>
+          <h2>Finalização de compra</h2>
+          
+          <div class="metodos-pagamento">
+            <h3>Método de pagamento</h3>
+            <label>
+              <input type="radio" name="metodo-pagamento" value="credito" checked>
+              Cartão de crédito
+            </label>
+            <label>
+              <input type="radio" name="metodo-pagamento" value="debito">
+              Cartão de débito
+            </label>
+          </div>
+          <div class="bandeira-cartao">
+                <h5 style="margin-bottom: 10px;">Selecione a bandeira do seu cartão</h5>
+
+                <label>
+                  <img src="/images/bandeira cartões/mastercard.png" alt="foto do mastercard" style="width:35px;height:24px;">
+                    <input type="radio" name="bandeira" value="American" checked>
+                </label>
+                <label>
+                  <img src="/images/bandeira cartões/visa.png" alt="foto do VISA" style="width:35px;height:24px;">
+                    <input type="radio" name="bandeira" value="visa" checked>
+                </label>
+                <label>
+                  <img src="/images/bandeira cartões/amex.png" alt="american express" style="width:35px;height:24px">
+                    <input type="radio" name="bandeira" value="American" checked>
+                </label>
+          </div>
+          <div class="input-total">
+            <hr>
+            <div class="card-info">
+              <h3>Dados do cartão</h3>
+              <label>
+                Número do cartão
+                <input type="text" name="card-number" placeholder="Número do cartão">
+              </label>
+              <label>
+                Nome do titular
+                <input type="text" name="card-holder-name" placeholder="Nome conforme está no cartão">
+              </label>
+              <label>
+                Data de validade
+                <input type="text" name="card-expiry-date" placeholder="mm/aa">
+              </label>
+              <label>
+                Código de segurança
+                <input type="text" name="card-cvv" placeholder="CVV">
+              </label>
+            </div>
+            
+            <hr>
+
+            <div class="billing-info">
+              <h3>Endereço de cobrança</h3>
+              <label>
+                Rua
+                <input type="text" name="billing-street" placeholder="Digite sua rua">
+              </label>
+              <label>
+                Número
+                <input type="text" name="billing-number" placeholder="Número da sua casa">
+              </label>
+              <label>
+                Complemento
+                <input type="text" name="billing-complement" placeholder="Ap, bloco...">
+              </label>
+              <label>
+                Cidade
+                <input type="text" name="billing-city" placeholder="Digite sua cidade">
+              </label>
+              <label>
+                Estado
+                <input type="text" name="billing-state" placeholder="Digite o seu estado">
+              </label>
+              <label>
+                CEP
+                <input type="text" name="billing-zip" placeholder="Digite seu CEP">
+              </label>
+            </div>
+            
+            <hr>
+
+            <div class="identification-info">
+              <h3>Dados de identificação</h3>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Coloque seu e-mail principal">
+              </label>
+              <label>
+                Nome completo
+                <input type="text" name="full-name" placeholder="Digite seu nome completo">
+              </label>
+              <label>
+                Número de celular
+                <input type="text" name="phone-number" placeholder="DDD + número">
+              </label>
+            </div>
+          </div>
+          <button type="submit">Finalizar compra</button>
+        </form>
+    </div>
+
+    </div>
+  </div>
+      <!--Final do formulário-->
+
+      <footer class="rodape">
+          <div class="logo-rodape">
+              <img src="/PET_LOGOS/logo_pet_sem_nome.png">
+              <h1><span class="red">PET</span>shop</h1>
+          </div>
+          <div class="rodape-last">
+              <p>© 2023 PETshop, Todos os direitos reservados.</p>
+          </div>
+      </footer>
+
+
+</body>
+</html>
