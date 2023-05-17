@@ -23,7 +23,7 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    background-color: #493657;
+    background:linear-gradient(rgb(54, 6, 54),black);
     z-index: 9999;
 }
 
@@ -384,7 +384,7 @@ section.catalog-product{
 
 /* Rodapé */
 .rodape{
-    background: #493657;
+    background:linear-gradient(rgb(54, 6, 54),black);
     color:white;
 }
 
