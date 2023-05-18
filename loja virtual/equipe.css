@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    height:100vh;
+    width:100vw;
+}
+
+body{
+    background-color:rgb(184, 174, 161);
+    font-family: 'ABeeZee', sans-serif;
+    overflow-x:hidden;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    background:linear-gradient(rgb(54, 6, 54),black);
+    z-index:9999;
+    position: fixed;
+    width:100%;
+}
+
+.red{
+    color:red;  
+}
+
+.menu .logo img{
+    width:50px;
+    height:50px;
+}
+
+.menu .logo a{
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+
+.menu .logo h1{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.contents ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+li a{
+    color:white;
+    text-decoration: none;
+    transition:.3s;
+}
+
+li a:hover{
+    color:red;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.hamburger{
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    display:none;
+}
+
+#menu-toggle{
+    display:none;
+}
+
+input:checked ~ .contents{
+    display:flex;
+}
+
+.menu-button-container{
+    color:white;
+    cursor:pointer;
+    transition: .6s;
+    display:none;
+}
+
+.menu-button-container:hover{
+    color:red;
+}
+
+
+.rodape{
+    background:linear-gradient(rgb(54, 6, 54),black);
+    color:white;
+}
+
+.rodape .logo-rodape{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:2rem;
+}
+
+.rodape .rodape-last{
+    display:flex;
+    justify-content: space-around;
+}
+
+.rodape .logo-rodape img{
+    width:200px;
+    height:200px;
+    padding:2rem;
+}
+
+
+/*fazendo o menu responsivo*/
+@media only screen and (max-width: 768px) {
+    .menu .logo a h1{
+        display:none;
+    }
+    .contents{
+        display:none;
+        
+    }
+    .contents ul{
+        flex-direction: column;
+        position:absolute;
+        height:100vh;
+        width:100vw;
+        left:0;
+        margin-top:1rem;
+        background-color:rgba(0,0,0,0.7);
+    }
+    .menu-button-container{
+        display:block;
+    }
+
+  }
+
+
+/*team styles*/
+.team{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:100px;
+}  
+
+.team .devs-1, .team .devs-2{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.team .dev{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding:2rem;
+}
+
+.team .devs{
+    flex-wrap:wrap
+}
+
+.team .dev img{
+    width:170px;
+    height:170px;
+    object-fit: cover;
+    justify-content: center;
+    border:7px solid rgb(54, 6, 54);
+    border-radius:999px;
+    align-items: center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.team .dev p{
+    font-weight:600;
+    padding-top:10px;
+}
+
+.team h1{
+    font-size:1.7rem;
+    padding:1rem;
+    letter-spacing: 3px;
+    font-weight:400;
+}
+
+.team h1:before{
+    content: '';
+	display: inline-block;
+	width: 5rem;
+	height: 5px;
+	background-color:rgb(54, 6, 54);
+	margin: 0 10px 8px 0;
+}
+
+.team h1:after{
+    content: '';
+	display: inline-block;
+	width: 5rem;
+	height: 5px;
+	background-color: rgb(54, 6, 54);
+	margin: 0 0 8px 10px;
+}
+
+
+
+.team .dev img:hover{
+    transform:scale(0.9);
+}
+
+/*fazendo a section team responsiva*/
+@media only screen and (max-width: 768px){
+    .team .devs-2,.devs-1{
+        flex-direction: column;
+    }
+}
