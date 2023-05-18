@@ -6,273 +6,299 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
-    
+    padding-top: 100px;    
   }
 
-  form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #dcdcdc;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    margin-bottom: 20px; 
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .total-finalizacao{
-    width:100%;
-    overflow: hidden;
-  }
-
-  .total-form{
-    float: left;
-    width: 65%;
-  }
-
-  .total-cart{
-    margin-right: 50px;
-    width: 30%;
-    float: right;
-    margin-top: 20px;
-    background-color: #dcdcdc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .total-cart img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 130px;
-  }
-
-  .bandeira-cartao label {
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  
-  .bandeira-cartao img {
-    vertical-align: middle;
-    margin-right: 10px;
-  }
-  
-  .bandeira-cartao input[type="radio"] {
-    width: auto;
-    display:block;
-    margin-top: 2px;
-    margin-left: 11px;
-  }
-
-
-  .produto1{
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .info-camisa {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .produto2{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .info-caneca {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="number"] {
-    width: 7%;
-    height: 13px;
-  }
-
-  .qtd-1 {
-    display: flex;
-  }
-
-  .qtd-2 {
-    display: flex;
-  }
-
-  .produtos label {
-    margin-right: 20px;
-    font-size: 13px;
-  }
-
-  .valor-subtotal{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .titulo{
-    display: flex;
-  }
-
-  .titulo h4 { 
-    margin-bottom: 20px;
-    display: flex;
-  }
-
-  .item-1 {
-    display: flex;
-  }
-
-  .item-1 p {
-    margin-bottom:10px;
-  }
-
-  .item-2 {
-    display: flex;
-  }
-
-  .item-2 p {
-    margin-bottom: 10px;
-  }
-
-  .frete {
-    display: flex;
-  }
-
-  .frete p {
-    margin-bottom: 10px;
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    width: 90%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  button[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-
-  .menu{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    height:100px;
-    background:linear-gradient(rgb(54, 6, 54),black);
-    z-index:9999;
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #dcdcdc;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 20px; 
 }
 
-.red{
-    color:red;  
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.menu .logo img{
-    width:50px;
-    height:50px;
+h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.menu .logo a{
-    display:flex;
-    gap:30px;
-    align-items: center;
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.menu .logo h1{
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    
+.total-finalizacao{
+  width:100%;
+  overflow: hidden;
 }
 
-.contents ul{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+.total-form{
+  float: left;
+  width: 65%;
 }
 
-ul li{
-    list-style-type: none;
-    padding-left: 40px;
+.total-cart{
+  margin-right: 50px;
+  width: 30%;
+  float: right;
+  margin-top: 20px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-size: 16px;
 }
 
-li a{
-    color:white;
-    text-decoration: none;
-    transition:.3s;
+.total-cart img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 130px;
 }
 
-li a:hover{
-    color:red;
+.bandeira-cartao label {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.logo a{
-    text-decoration: none;
+.bandeira-cartao img {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
-.hamburger{
-    color:white;
-    font-size:30px;
-    cursor:pointer;
-    display:none;
+.bandeira-cartao input[type="radio"] {
+  width: auto;
+  display:block;
+  margin-top: 2px;
+  margin-left: 11px;
 }
 
-#menu-toggle{
-    display:none;
+
+.produto1{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.info-camisa {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.produto2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-caneca {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 7%;
+  height: 13px;
+}
+
+.qtd-1 {
+  display: flex;
+}
+
+.qtd-2 {
+  display: flex;
+}
+
+.produtos label {
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.valor-subtotal{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titulo{
+  display: flex;
+}
+
+.titulo h4 { 
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.item-1 {
+  display: flex;
+}
+
+.item-1 p {
+  margin-bottom:10px;
+}
+
+.item-2 {
+  display: flex;
+}
+
+.item-2 p {
+  margin-bottom: 10px;
+}
+
+.frete {
+  display: flex;
+}
+
+.frete p {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Barra de Navegação */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background:linear-gradient(rgb(54, 6, 54),black);
+  z-index: 9999;
+}
+
+.nav-bar .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-bar .logo a {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-bar .logo h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contents ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+  padding-left: 40px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+li a:hover {
+  color: #a30015;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.nav-bar-button-container{
+  display: none;
+  width: 25px;
+  height: 25px;
+  fill: #a30015;
+}
+
+.nav-bar-button-container:hover{
+  cursor: pointer;
+}
+
+#nav-bar-toggle {
+  display: none;   
+}
+
+.cart-icon-nav-bar{
+  width: 25px;
+  height: 25px;
+  fill: #a30015;
+  cursor: pointer;
 }
 
 input:checked ~ .contents{
-    display:flex;
+  display:flex;
 }
 
-.menu-button-container{
-    color:white;
-    cursor:pointer;
-    transition: .6s;
-    display:none;
+@media only screen and (max-width: 768px) {
+  .nav-bar .logo a h1 {
+      display: none;
+  }
+
+  .nav-bar-button-container{
+      display: block;
+  }
+
+  .contents {
+      display: none;
+  }
+
+  .contents ul {
+      flex-direction: column;
+      position: fixed;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 100px);
+      margin: 0;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
-.menu-button-container:hover{
-    color:red;
-}
 
-
+/* Rodapé */
 .rodape{
     background:linear-gradient(rgb(54, 6, 54),black);
     color:white;
@@ -299,9 +325,8 @@ input:checked ~ .contents{
 }
 
 
-
+/*Responsividade da página de pagamento - João Vitor*/
 @media only screen and (max-width: 768px) {
-  /*Responsividade da página de pagamento - João Vitor*/
   .total-cart {
     float: none;
     width: auto;
@@ -320,29 +345,4 @@ input:checked ~ .contents{
     margin-left: 20px;
     margin-right: 20px;
   }
-
-
-  /* Responsividade do cabeçalho e rodapé - Gustavo*/
-    .menu .logo a h1{
-        display:none;
-    }
-    .contents{
-        display:none;
-        
-    }
-    .contents ul{
-        flex-direction: column;
-        position:absolute;
-        height:90%;
-        width:100vw;
-        left:0;
-        margin-top:2.5rem;
-        background-color:rgba(0,0,0,0.7);
-    }
-    .menu-button-container{
-        display:block;
-    }
-
-  }
-  
-  
+}

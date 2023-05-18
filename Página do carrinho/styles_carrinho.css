@@ -4,244 +4,266 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding-top: 100px;    
+}
 
-    
-  h3 {
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+  
+h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .conteiner-total {
-    width:100%;
-    overflow: hidden;
-  }
+  width:100%;
+  overflow: hidden;
+}
 
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 .total-cart{
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-size: 16px;
+}
+
+.total-cart img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 130px;
+}
+
+.produto1{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.info-camisa {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.produto2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-caneca {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 15%;
+  height: 13px;
+}
+
+.qtd-1 {
+  display: flex;
+}
+
+.qtd-2 {
+  display: flex;
+}
+
+.produtos label {
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.valor-subtotal{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.valor-subtotal label {
+  font-size: 15px;
+}
+
+
+.valor-subtotal input[type="text"] {
+  width: 200px;
+}
+
+
+.titulo{
+  display: flex;
+}
+
+.titulo h4 { 
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #dcdcdc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .total-cart img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 130px;
-  }
-
-  .produto1{
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .info-camisa {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .produto2{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .info-caneca {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="number"] {
-    width: 15%;
-    height: 13px;
-  }
-
-  .qtd-1 {
-    display: flex;
-  }
-
-  .qtd-2 {
-    display: flex;
-  }
-
-  .produtos label {
-    margin-right: 20px;
-    font-size: 13px;
-  }
-
-  .valor-subtotal{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .valor-subtotal label {
-    font-size: 15px;
-  }
-
-
-  .valor-subtotal input[type="text"] {
-    width: 200px;
-  }
-
-
-  .titulo{
-    display: flex;
-  }
-
-  .titulo h4 { 
-      margin-top: 20px;
-      margin-bottom: 20px;
-    display: flex;
-  }
-
-  .item-1 {
-    display: flex;
-  }
-
-  .item-1 p {
-    margin-bottom:10px;
-  }
-
-  .item-2 {
-    display: flex;
-  }
-
-  .item-2 p {
-    margin-bottom: 10px;
-  }
-
-  .frete {
-    display: flex;
-  }
-
-  .frete p {
-    margin-bottom: 10px;
-  }
-
-  .conteiner-total a {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-
-
-  /* Cabeçalho e rodaapé */
-
-  .menu{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    height:100px;
-    background:linear-gradient(rgb(54, 6, 54),black);
-    z-index:9999;
+  display: flex;
 }
 
-.red{
-    color:red;  
+.item-1 {
+  display: flex;
 }
 
-.menu .logo img{
-    width:50px;
-    height:50px;
+.item-1 p {
+  margin-bottom:10px;
 }
 
-.menu .logo a{
-    display:flex;
-    gap:30px;
-    align-items: center;
+.item-2 {
+  display: flex;
 }
 
-.menu .logo h1{
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    
+.item-2 p {
+  margin-bottom: 10px;
 }
 
-.contents ul{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+.frete {
+  display: flex;
 }
 
-ul li{
-    list-style-type: none;
-    padding-left: 40px;
+.frete p {
+  margin-bottom: 10px;
 }
 
-li a{
-    color:white;
-    text-decoration: none;
-    transition:.3s;
+.conteiner-total a {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-li a:hover{
-    color:red;
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.logo a{
-    text-decoration: none;
+
+/* Barra de Navegação */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background:linear-gradient(rgb(54, 6, 54),black);
+  z-index: 9999;
 }
 
-.hamburger{
-    color:white;
-    font-size:30px;
-    cursor:pointer;
-    display:none;
+.nav-bar .logo img {
+  width: 50px;
+  height: 50px;
 }
 
-#menu-toggle{
-    display:none;
+.nav-bar .logo a {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-bar .logo h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contents ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+  padding-left: 40px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+li a:hover {
+  color: #a30015;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.nav-bar-button-container{
+  display: none;
+  width: 25px;
+  height: 25px;
+  fill: #a30015;
+}
+
+.nav-bar-button-container:hover{
+  cursor: pointer;
+}
+
+#nav-bar-toggle {
+  display: none;   
+}
+
+.cart-icon-nav-bar{
+  width: 25px;
+  height: 25px;
+  fill: #a30015;
+  cursor: pointer;
 }
 
 input:checked ~ .contents{
-    display:flex;
+  display:flex;
 }
 
-.menu-button-container{
-    color:white;
-    cursor:pointer;
-    transition: .6s;
-    display:none;
+@media only screen and (max-width: 768px) {
+  .nav-bar .logo a h1 {
+      display: none;
+  }
+
+  .nav-bar-button-container{
+      display: block;
+  }
+
+  .contents {
+      display: none;
+  }
+
+  .contents ul {
+      flex-direction: column;
+      position: fixed;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 100px);
+      margin: 0;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
-.menu-button-container:hover{
-    color:red;
-}
-
-
+/* Rodapé */
 .rodape{
     background:linear-gradient(rgb(54, 6, 54),black);
     color:white;
@@ -267,9 +289,9 @@ input:checked ~ .contents{
     padding:2rem;
 }
 
-@media only screen and (max-width: 768px) {
-  /*Responsividade da página de pagamento - João Vitor*/
 
+/*Responsividade da página de pagamento - João Vitor*/
+@media only screen and (max-width: 768px) {
   .total-cart {
     width: 85%;
     margin-left: auto;
@@ -287,27 +309,4 @@ input:checked ~ .contents{
     margin-left: 20px;
     margin-right: 20px;
   }
-
-
-  /* Responsividade do cabeçalho e rodapé - Gustavo*/
-    .menu .logo a h1{
-        display:none;
-    }
-    .contents{
-        display:none;
-        
-    }
-    .contents ul{
-        flex-direction: column;
-        position:absolute;
-        height:90%;
-        width:100vw;
-        left:0;
-        margin-top:2.5rem;
-        background-color:rgba(0,0,0,0.7);
-    }
-    .menu-button-container{
-        display:block;
-    }
-
-  }
+}
