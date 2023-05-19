@@ -1,0 +1,327 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    height:100vh;
+    width:100vw;
+}
+
+body{
+    background-color:rgb(184, 174, 161);
+    font-family: Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    background:linear-gradient(rgb(54, 6, 54),black);
+    z-index:9999;
+    position: fixed;
+    width:100%;
+}
+
+.red{
+    color:red;  
+}
+
+.menu .logo img{
+    width:50px;
+    height:50px;
+}
+
+.menu .logo a{
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+
+.menu .logo h1{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.contents ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index:999;
+}
+
+ul li{
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+li a{
+    color:white;
+    text-decoration: none;
+    transition:.3s;
+}
+
+li a:hover{
+    color:red;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.hamburger{
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    display:none;
+}
+
+#menu-toggle{
+    display:none;
+}
+
+input:checked ~ .contents{
+    display:flex;
+}
+
+.menu-button-container{
+    color:white;
+    cursor:pointer;
+    transition: .6s;
+    display:none;
+}
+
+.menu-button-container:hover{
+    color:red;
+}
+
+.promocao{
+    display:flex;
+    justify-content: space-around;
+    background-color:rgba(0,0,0,0.9);
+    background:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.60)), url("pet-logo-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height:70vh;
+    color:white;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top:100px;
+}
+
+.promocao .image{
+    cursor:pointer;
+}
+
+.promocao .destaque{
+    position:absolute;
+    top:5.5rem;
+    padding:7px;
+    font-size:2rem;
+    font-weight:300;
+    letter-spacing: 3px;
+    background-color:red;
+    border-radius: 10px;
+    margin-top:10px;
+}
+
+.text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text span{
+    font-size:4rem;
+    background-color:rgb(54, 6, 54);
+    text-align: center;
+    border-radius: 50px;
+    margin-top:1.5rem;
+    padding:1rem;
+}
+
+.text button{
+    justify-content: center;
+    width:200px;
+    border:none;
+    margin:auto;
+    cursor:pointer;
+    background-color:black;
+    color:white;
+    margin-top:20px;
+    border-radius: 50px;
+    height:50px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1), .5s;
+}
+
+.text button:hover{
+    background-color: white;
+    color:red;
+}
+
+.promocao .image img{
+    transition:.3s;
+    width:12rem;
+    object-fit: cover;
+}
+
+.promocao .image img:hover{
+    transform:scale(1.1);
+}
+
+.categorias{
+    display: flex;
+    height:75vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias .icons{
+    display: flex;
+    padding:2rem;
+    gap:5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:3rem;
+}
+
+.categorias .icons .link-cat {
+    color: inherit; 
+    text-decoration: none; 
+  }
+
+.categorias h1{
+    position: absolute;
+    bottom:8.5rem;
+    font-size:1rem;
+    background-color: red;
+    border-radius: 200px;
+    padding:20px;
+    color:white;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.categorias .cat{
+    text-align: center;
+    background-color:white;
+    padding:1.5rem;
+    border-radius:400px;
+    width:15rem;
+    height:7rem;
+    cursor:pointer;
+    transition:ease-in-out .3s;
+}
+
+.categorias .cat:hover{
+    background-color:red;
+    transform:scale(1.1);
+}
+
+.categorias .cat i{
+    padding:1rem;
+    color:rgb(54, 6, 54);
+    transition:ease-in-out .3s;
+}
+
+.rodape{
+    background:linear-gradient(rgb(54, 6, 54),black);
+    color:white;
+}
+
+.rodape .logo-rodape{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:2rem;
+}
+
+.rodape .rodape-last{
+    display:flex;
+    justify-content: space-around;
+}
+
+.rodape .logo-rodape img{
+    width:200px;
+    height:200px;
+    padding:2rem;
+}
+
+
+/*categories section responsive*/
+@media only screen and (max-width: 618px){
+    .categorias{
+        height:150vh;   
+    }    
+    .categorias h1{
+        bottom:-6rem;
+    }
+}   
+
+
+    
+
+@media only screen and (max-width: 768px) {
+    .menu .logo a h1{
+        display:none;
+    }
+    .contents{
+        display:none;
+        
+    }
+    .contents ul{
+        flex-direction: column;
+        position:absolute;
+        height:100vh;
+        width:100vw;
+        left:0;
+        margin-top:1.2rem;
+        background-color:rgba(0,0,0,0.7);
+    }
+    .menu-button-container{
+        display:block;
+    }
+
+    .promocao{
+        height:90vh;
+        flex-wrap: wrap;
+    }
+    .promocao .text span{
+        position:absolute;
+        right:10rem;
+        font-size:20px;
+        padding:12px;
+        top:15rem;
+
+    }
+    .promocao .text h1{
+        visibility: hidden;
+    }
+
+    /*categories section*/
+    .categorias h1{
+        bottom:2rem;
+    }
+
+  }
+
+  
+  @media only screen and (max-width: 425px){
+    .promocao .destaque{
+        font-size:10px;
+    }
+  }
+
+  @media only screen and (max-width: 320px){
+    .promocao .destaque{
+        font-size:1rem;
+    }
+  }
