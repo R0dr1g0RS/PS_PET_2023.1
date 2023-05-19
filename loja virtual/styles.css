@@ -191,6 +191,11 @@ input:checked ~ .contents{
     margin-top:3rem;
 }
 
+.categorias .icons .link-cat {
+    color: inherit; 
+    text-decoration: none; 
+  }
+
 .categorias h1{
     position: absolute;
     bottom:8.5rem;
