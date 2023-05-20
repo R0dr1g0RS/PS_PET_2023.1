@@ -237,9 +237,23 @@ input:checked ~ .contents{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 508px) {
     .filter-container button{
-        font-size: small;
+        width: 60px;
+        height: 35px;
+        font-size: 9px;
+    }
+
+    .filter .search-filter{
+        height: 20px;
+
+        .search-icon{
+            width: 20px;
+        }
+
+        .search-input{
+            font-size: 12px;
+        }
     }
 }
 
