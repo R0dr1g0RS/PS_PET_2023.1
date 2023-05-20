@@ -15,95 +15,125 @@ body{
     overflow-x:hidden;
 }
 
-.menu{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    height:100px;
-    background:linear-gradient(rgb(54, 6, 54),black);
-    z-index:9999;
+.svg-icon svg{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Barra de navegação */
+.nav-bar {
     position: fixed;
-    width:100%;
-}
-
-.red{
-    color:red;  
-}
-
-.menu .logo img{
-    width:50px;
-    height:50px;
-}
-
-.menu .logo a{
-    display:flex;
-    gap:30px;
-    align-items: center;
-}
-
-.menu .logo h1{
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-.contents ul{
-    display:flex;
+    top: 0;
+    width: 100%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index:999;
+    height: 100px;
+    background:linear-gradient(rgb(54, 6, 54),black);
+    z-index: 9999;
 }
 
-ul li{
+.nav-bar .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-bar .logo a {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-bar .logo h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contents ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li {
     list-style-type: none;
     padding-left: 40px;
 }
 
-li a{
-    color:white;
+li a {
+    color: white;
     text-decoration: none;
-    transition:.3s;
+    transition: 0.3s;
 }
 
-li a:hover{
-    color:red;
+li a:hover {
+    color: #a30015;
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
 }
 
-.hamburger{
-    color:white;
-    font-size:30px;
-    cursor:pointer;
-    display:none;
+.nav-bar-button-container{
+    display: none;
+    width: 25px;
+    height: 25px;
+    fill: #a30015;
 }
 
-#menu-toggle{
-    display:none;
+.nav-bar-button-container:hover{
+    cursor: pointer;
+}
+
+#nav-bar-toggle {
+    display: none;   
+}
+
+.cart-icon-nav-bar{
+    width: 25px;
+    height: 25px;
+    fill: #a30015;
+    cursor: pointer;
 }
 
 input:checked ~ .contents{
     display:flex;
 }
 
-.menu-button-container{
-    color:white;
-    cursor:pointer;
-    transition: .6s;
-    display:none;
+@media only screen and (max-width: 768px) {
+    .nav-bar .logo a h1 {
+        display: none;
+    }
+
+    .nav-bar-button-container{
+        display: block;
+    }
+  
+    .contents {
+        display: none;
+    }
+  
+    .contents ul {
+        flex-direction: column;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
 
-.menu-button-container:hover{
-    color:red;
-}
 
+/* Promocao */
 .promocao{
     display:flex;
     justify-content: space-around;
     background-color:rgba(0,0,0,0.9);
-    background:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.60)), url("pet-logo-removebg-preview.png");
+    background:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.60));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -167,7 +197,7 @@ input:checked ~ .contents{
 
 .promocao .image img{
     transition:.3s;
-    width:12rem;
+    width:13rem;
     object-fit: cover;
 }
 
@@ -175,9 +205,11 @@ input:checked ~ .contents{
     transform:scale(1.1);
 }
 
+
+/* Categorias */
 .categorias{
     display: flex;
-    height:75vh;
+    height:65vh;
     justify-content: center;
     align-items: center;
 }
@@ -194,7 +226,7 @@ input:checked ~ .contents{
 .categorias .icons .link-cat {
     color: inherit; 
     text-decoration: none; 
-  }
+}
 
 .categorias h1{
     position: absolute;
@@ -214,7 +246,7 @@ input:checked ~ .contents{
     padding:1.5rem;
     border-radius:400px;
     width:15rem;
-    height:7rem;
+    height:6rem;
     cursor:pointer;
     transition:ease-in-out .3s;
 }
@@ -270,26 +302,6 @@ input:checked ~ .contents{
     
 
 @media only screen and (max-width: 768px) {
-    .menu .logo a h1{
-        display:none;
-    }
-    .contents{
-        display:none;
-        
-    }
-    .contents ul{
-        flex-direction: column;
-        position:absolute;
-        height:100vh;
-        width:100vw;
-        left:0;
-        margin-top:1.2rem;
-        background-color:rgba(0,0,0,0.7);
-    }
-    .menu-button-container{
-        display:block;
-    }
-
     .promocao{
         height:90vh;
         flex-wrap: wrap;
